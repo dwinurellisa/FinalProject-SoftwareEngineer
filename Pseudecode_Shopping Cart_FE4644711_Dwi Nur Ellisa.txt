@@ -1,0 +1,52 @@
+# Shopping Cart sederhana (menambahkan barang ke shopping cart dan calculate jumlah barang).
+begin
+    READ AND WRITE "Shopping APP"
+    Display "Halaman Login"
+    IF "sudah punya akun is TRUE"
+        READ AND WRITE "Username" with String
+        READ AND WRITE "Password" with String
+        READ AND WRITE "Login Button"
+            IF "Username && Password is TRUE"
+                Display "Dashboard Fitur Shopping App"
+            ELSE 
+                Return READ AND WRITE "Username" with String or Back to step 6
+    ELSE
+        Display "Form Register"
+        READ AND WRITE "Username" with String
+        READ AND WRITE "NIK" with Integer
+        READ AND WRITE "Password" with String
+        READ AND WRITE "No HP" with Integer
+        READ AND WRITE "Alamat" with String
+        READ AND WRITE "Register Button"
+        Display "Dashboard Fitur Shopping App"
+    Display "Halaman List Produk"
+    IF "Tambahkan Produk Ke Shopping Cart is TRUE"
+        READ AND WRITE "Tambah Button"
+        Display "Produk Berhasil Ditambahkan"
+            IF "Update Shopping Cart is TRUE"
+                READ AND WRITE "Tambahkan Jumlah Produk" with Integer
+                Display "Calculate Jumlah Produk"
+                Display "Jumlah Produk"
+                Display "Calculate Harga Produk"
+                Display "Total Harga"
+                READ AND WRITE "Checkout"
+            ELSE
+                Return Display "Jumlah Produk" or Back to step 29
+    ELSE 
+        #End Step           
+DONE
+
+
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
